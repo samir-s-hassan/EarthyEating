@@ -1,96 +1,164 @@
+/* Root Styles CSS */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #e5f9e0; /* Light green background */
+  font-family: Avenir, Helvetica, sans-serif;
+  color: black;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+/* Header CSS */
+.header-container {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-between;
+  align-items: center; /* Align items vertically in the center */
+  padding: 20px 10px;
+  padding-bottom: 60px;
+  background-color: #2f7a3f; /* Dark green header background */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.header-left {
+  display: flex; /* Use flexbox to align icon and title horizontally */
+  align-items: center;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.header-left img {
+  height: 80px;
+  margin-right: 10px; /* Add some space between the image and title */
+}
+
+.header-left h1 {
+  font-size: 45px;
+  color: white; /* White text for header */
+}
+
+.header-right {
+  padding-right: 10px;
+}
+
+.header-right button {
+  background-color: #2f7a3f;
+  border: solid;
+  border-width: 3px;
+  border-color: white;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  padding: 15px 16px;
   text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  width: 80px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+/* Home page CSS */
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  background-color: #e5f9e0; /* Match background with root */
 }
 
 .card {
-  padding: 2em;
+  width: 300px;
+  height: 400px;
+  background: white;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #2f7a3f;
+  border-radius: 0.3rem;
+  box-shadow: 12px 12px 2px 1px rgba(47, 122, 63, 0.2); /* Green shadow */
+  margin: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.card img {
+  height: 100%;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.top-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.bottom-container {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.bottom-container h3 {
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.bottom-container p {
+  margin: 2px;
+  color: #2f7a3f; /* Green text for descriptions */
+}
+
+.bottom-container a {
+  color: #e41085; /* Keep link color for contrast */
+  text-decoration: none;
+}
+
+/* 404 Page CSS */
+
+.fof-container {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  color: black;
+  background-color: #e5f9e0; /* Match the background */
+}
+
+.fof {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fof h1 {
+  color: #2f7a3f; /* Green text */
+  font-size: 50px;
+  display: inline-block;
+  padding-right: 12px;
+  animation: type 0.6s alternate infinite;
+}
+
+@keyframes type {
+  from {
+    box-shadow: inset -3px 0px 0px #888;
   }
-  a:hover {
-    color: #747bff;
+  to {
+    box-shadow: inset -3px 0px 0px transparent;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+
+/* Detail Page CSS */
+
+.produce-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-container {
+  padding-left: 100px;
+  width: 40vw;
+}
+
+.image-container img {
+  width: 80%;
+}
+
+.produce-details {
+  width: 45vw;
+  padding-left: 30px;
+}
+
+.produce-details p {
+  color: #2f7a3f; /* Green text for details */
 }
