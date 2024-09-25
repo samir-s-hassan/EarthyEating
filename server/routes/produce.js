@@ -13,7 +13,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:produceId", (req, res) => {
-  res.status(200).sendFile(path.resolve(__dirname, "../public/gift.html"));
+  res.status(200).sendFile(path.resolve(__dirname, "../public/produce.html"));
 });
 
 export default router
