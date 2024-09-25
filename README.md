@@ -25,8 +25,9 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
+Here's a walkthrough of the implemented required features:
 
+[Video Walkthrough](https://www.loom.com/share/2d2ebf472db248a4bbae9bb9abde9a17?sid=eeb06296-5b2d-480e-b89e-5cfab6c4c887)
 
 Video created with Loom
 
