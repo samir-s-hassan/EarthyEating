@@ -23,6 +23,18 @@ The following **optional** features are implemented:
 
 - [X] The web app displays items in a unique format, such as cards rather than lists
 
+## How to run
+1. Open two tabs on your terminal
+2. Both tabs should have you starting at the root of this project repository 
+3. Run "cd client" on one terminal tab and "cd server" on the other terminal tab
+4. Run "npm install" to make sure you have all the necessary dependencies/packages
+5. Now that you have the client and server directories open on different tabs, run "npm install" within each tab to make sure you have all the necessary dependencies for the client and the server
+6. Run "npm start" on the server-side and this will get our server started on a port!
+7. Run "npm run build" and then "npm run dev" on the client-side and this will get our client started on a port
+8. This project has been configured such that the client is already requesting for data from to the port the server started on
+9. Click on the link present in your client terminal to open your front-end
+10. Enjoy your app!
+
 ## Video Walkthrough
 
 Here's a walkthrough of the implemented required features:
