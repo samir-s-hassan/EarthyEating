@@ -29,7 +29,7 @@ Here's a walkthrough of the implemented required features:
 
 [Video Walkthrough](https://imgur.com/gallery/web103-project-1-UDPvSem)
 
-Video created with Loom
+Video created with Kap
 
 ## Notes
 
