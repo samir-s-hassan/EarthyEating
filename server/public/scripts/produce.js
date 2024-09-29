@@ -60,13 +60,13 @@ const renderProduceDetail = async () => {
     document.getElementById("category").textContent =
       "Category: " + produce.category;
     document.getElementById("calories").textContent =
-      "Calories per 100g: " + produce.caloriesPer100g;
+      "Calories per 100g: " + produce.caloriesper100g;
     document.getElementById("seasonality").textContent =
       "Seasonality: " + produce.seasonality;
     document.getElementById("tasteProfile").textContent =
-      "Taste: " + produce.tasteProfile;
+      "Taste: " + produce.tasteprofile;
     document.getElementById("nutritionalValue").textContent =
-      "Nutritional Value: " + produce.nutritionalValue;
+      "Nutritional Value: " + produce.nutritionalvalue;
     document.getElementById("price").textContent = "Price: " + produce.price;
     document.title = `Information about - ${produce.name}`;
   } else {

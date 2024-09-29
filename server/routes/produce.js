@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 const router = express.Router();
 
-router.get("/", produceController.getGifts);
+router.get("/", produceController.getProduce);
 
 router.get("/:produceId", (req, res) => {
   res.status(200).sendFile(path.resolve(__dirname, "../public/produce.html"));
