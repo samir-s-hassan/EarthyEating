@@ -41,7 +41,12 @@ Video created with Kap
 
 ## Notes
 
-I edited 
+I encountered multiple challenges/roadblocks when working on this project.
+1. I wanted the detailed produce page to be styled in a similar manner to the home page. However, this wasn't working and it was styling with essentially no styling. I realized it's because I was referencing the style sheet using ./ when I should've been using ../ The stylesheet was one directory up and since I wasn't referencing it correctly, it wasn't taking in the styling for it.
+2. Initially, I was setting up a 404 error whenever the user would visit a page that wasn't at / The logic was that the user is visiting a page other than the home page and therefore we'll give them a 404 error and ask them to return to home page. This didn't work though when the user was visiting the detailed produce page as the route was /produce/produceId. To fix this, I created a handleRouting function that would check if the user was either at the home / or the produce /produce/. If not, then we'd give them a 404 error.
+3. After adding the data to Railway and then fetching the data from the /produce route, I realized that something was wrong. Certain attributes would get the data as undefined. However, this didn't make sense as the Railway database had all the data correctly filled. I learned that when I added the data to Railway, it made all the category spellings lower-case and therefore I'd have to change my script to account for this. In my scripts/produce.js, when I read the produce.attribute, the attribute should be written in all lowercase.
+
+This is not a separate repository from my Project 1 rather I did my Project 2 within this repo as it made the most sense. Everything follows the Project 2 requirements anyways.
 
 ## License
 
