@@ -27,3 +27,47 @@ const createProduceTable = async () => {
     console.error("⚠️ error creating Produce table", err);
   }
 };
+
+// Function to seed the produce table with data
+const seedProduceTable = async () => {
+  // First, ensure the table is created
+  await createProduceTable();
+
+  try {
+    // Traverse through produce data and insert each produce into the database
+    produceData.forEach((produce) => {
+      const insertQuery = {
+        text: `
+            INSERT INTO produce (name, category, caloriesPer100g, seasonality, tasteProfile, nutritionalValue, price, image)
+            VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+          `,
+      };
+
+      const values = [
+        produce.name,
+        produce.category,
+        produce.caloriesPer100g,
+        produce.seasonality,
+        produce.tasteProfile,
+        produce.nutritionalValue,
+        produce.price,
+        produce.image,
+      ];
+
+      // Insert each produce into the database
+      pool.query(insertQuery, values, (err, res) => {
+        if (err) {
+          console.error("⚠️ error inserting produce", err);
+          return;
+        }
+
+        console.log(`✅ ${produce.name} added successfully`);
+      });
+    });
+  } catch (err) {
+    console.error("⚠️ error seeding produce data", err);
+  }
+};
+
+// Call the seed function to create the table and insert the data
+seedProduceTable();
