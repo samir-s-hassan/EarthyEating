@@ -35,7 +35,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of the implemented required features:
 
-[Video Walkthrough]()
+[Video Walkthrough](https://imgur.com/gallery/web103-project2-4v5excR)
 
 Video created with Kap
 
