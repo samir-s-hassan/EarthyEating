@@ -39,7 +39,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of the implemented required features:
 
-[Video Walkthrough](https://imgur.com/gallery/web103-project-1-UDPvSem)
+[Video Walkthrough]()
 
 Video created with Kap
 

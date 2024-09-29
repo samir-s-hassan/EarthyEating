@@ -15,7 +15,7 @@ const createProduceTable = async () => {
         tasteProfile VARCHAR(255) NOT NULL,
         nutritionalValue TEXT NOT NULL,
         price VARCHAR(50) NOT NULL,
-        image VARCHAR(255) NOT NULL,
+        image VARCHAR(255) NOT NULL
     );
 `;
 
