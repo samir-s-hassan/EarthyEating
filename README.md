@@ -1,4 +1,4 @@
-# WEB103 Project 2 - Earthy Eating
+# Earthy Eating
 
 Submitted by: Samir Hassan
 
@@ -33,11 +33,7 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of the implemented required features:
-
-[Video Walkthrough](https://imgur.com/gallery/web103-project2-4v5excR)
-
-Video created with Kap
+N/A
 
 ## Notes
 
